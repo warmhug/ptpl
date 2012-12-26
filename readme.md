@@ -27,8 +27,9 @@
     // var compiledTemplate = Mustache.compile(tpl);  
     // var templateOutput = compiledTemplate(templateData);        
 
-    html-file ( xxViewTemp.html ) :  
-    <span>name:{{name}</span>
+
+    html-file : ( xxViewTemp.html )      
+    &lt;span&gt;name:{{name}&lt;/span&gt;
 
 - 注意
 > 要转换html模版文件所在的各级目录名 以及html模版文件的文件名，不能包含.tpl、.htm、.html等“关键字”。   
