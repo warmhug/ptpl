@@ -18,10 +18,10 @@
 
     **JS-file：**
 
-    // 变量名格式为：标记+文件路径。默认标记“-ptpl-text!”    
+    // 变量名格式为：标记+文件路径。默认标记“ptpl-text!”    
     // 模版文件路径为./xxViewTemp.html  
-    var tpl = '-ptpl-text!./xxViewTemp.html';  
-    var tpl1 = '-ptpl-text!a/yyViewTemp.html'; 
+    var tpl = '<!--ptpl-text!./xxViewTemp.html-->';  
+    var tpl1 = '<!--ptpl-text!../yyViewTemp.html-->'; 
     
     // use in mustach or underscore  
     // var compiledTemplate = Mustache.compile(tpl);  
@@ -33,5 +33,5 @@
 
 - 注意
 > 要转换html模版文件所在的各级目录名 以及html模版文件的文件名，不能包含.tpl、.htm、.html等“关键字”。   
-> 最好用默认标记“-ptpl-text!”，标记支持自定义，但需要保证与js文件里其他字符不能重复。
+> 最好用默认标记“ptpl-text!”，标记支持自定义，但需要保证与js文件里其他字符不能重复。
 
