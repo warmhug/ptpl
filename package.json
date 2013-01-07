@@ -1,6 +1,6 @@
 {
   "name": "ptpl",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "parse html template files to js file",
   "main": "ptpl.js",
   "scripts": {
