@@ -39,7 +39,8 @@ var ptpl = {
         while ((arr = reg.exec(data)) && arr.length == 3) {
             var tpl = fs.readFileSync(path.resolve(dir, arr[1]), 'utf8');
             tpl = tpl.replace(/\r*\n\s*/igm, '').replace(/^\s\s*/, '').replace(/\s\s*$/, '');
-            var rep = new RegExp("'[^']*" + arr[0] + "[^']*'");
+            var rep = new RegExp("'\\s*" + arr[0] + "[^']*'");
+            //console.log(rep.exec(data)[0]);
             data = data.replace(rep.exec(data)[0], "'" + arr[0] + tpl + "'");
             fs.writeFileSync(file, data);
             console.log('parse file success');

@@ -20,7 +20,7 @@
 
     // 变量名格式为：标记+文件路径。默认标记“ptpl-text!”    
     // 模版文件路径为./xxViewTemp.html  
-    var tpl = '<!--ptpl-text!./xxViewTemp.html-->';  
+    var tpl = '<!--ptpl-text!./xxViewTemp.html-->';   // 只能为‘单引号’括起来
     var tpl1 = '<!--ptpl-text!../yyViewTemp.html-->'; 
     
     // use in mustach or underscore  
@@ -32,6 +32,7 @@
     `<span>name:{{name}</span>`
 
 - 注意
+> 变量的值必须为单引号，不能为双引号括起来，并且以‘<!--ptpl-...’开头。
 > 要转换html模版文件所在的各级目录名 以及html模版文件的文件名，不能包含.tpl、.htm、.html等“关键字”。   
 > 最好用默认标记“ptpl-text!”，标记支持自定义，但需要保证与js文件里其他字符不能重复。
 

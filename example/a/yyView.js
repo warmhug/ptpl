@@ -1,8 +1,8 @@
 
 
 // before replace: 
-var tpl = '<!--ptpl-text!./yyViewTemp.html-->';
-var tpl1 = '<!--ptpl-text!../xxViewTemp.html-->';
+var tpl = '<!--ptpl-text!./yyViewTemp.html--><!doctype html><title>aa</title>';
+var tpl1 = '<!--ptpl-text!../xxViewTemp.html--><span>name:{{name}</span>';
 
 
 // use in mustach or underscore
